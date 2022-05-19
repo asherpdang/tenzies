@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Righteous;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F7FB;
+  width: 100%;
+  height: 100vh;
+
+  color: #293264;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-container {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
+  background-color: lightblue;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.start-button {
+  font-family: Righteous;
   color: white;
+  background-color: #4D5B9E;
+  border-radius: 15px;
+  border: none;
+
+  height: 52px;
+  width: 193px;
 }
 
-.App-link {
-  color: #61dafb;
+.quiz-container {
+  background: aliceblue;
+  margin: 40px 75px;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.question-container {
+  text-align: left;
+}
+
+.question-title {
+  margin-left: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 19px;
+}
+
+.display-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 15px;
+}
+
+.option-button {
+  font-family: Inter;
+  color: #293264;
+  border-radius: 8px;
+  border-width: 0.2px;
+  border-color: #293264;
+  min-width: fit-content;
+  min-height: 30px;
+  margin-left: 12px;
+}
+
+.submit-button {
+  font-family: Inter;
+  font-weight: bold;
+  width: 120px;
+  height: 35px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  color: #293264;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: #293264;
+  margin-left: 12px;
+}
+
+.option-button:focus,
+.submit-button:focus {
+  outline: none;
+}
+
+.score {
+  font-weight: bold;
+  margin-left: 10px;
 }
